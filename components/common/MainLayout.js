@@ -1,5 +1,6 @@
 import Sidebar from "./Sidebar";
 import styled from "styled-components";
+import Navbar from "./Navbar";
 
 const Main = styled.div`
   ::-webkit-scrollbar {
@@ -20,9 +21,10 @@ const Main = styled.div`
 
 function MainLayout({ children }) {
   return (
-    <div className="w-full h-screen bg-gray-50 flex overflow-hidden">
+    <div className="w-full h-screen bg-gray-50 flex overflow-hidden smallTablet:flex-col">
+      <Navbar />
       <Sidebar />
-      <Main className="w-full max-w-full h-full overflow-y-auto py-10">
+      <Main className="w-full max-w-full h-full overflow-y-auto py-10 px-10 smallTablet:px-5 phone:px-2">
         {children}
       </Main>
     </div>
