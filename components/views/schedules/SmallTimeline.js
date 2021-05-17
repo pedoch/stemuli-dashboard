@@ -56,6 +56,7 @@ export default function SmallTimeLine() {
       <div className="grid grid-cols-1 w-full verySmallLaptop:grid-cols-2 smallTablet:grid-cols-1">
         {tl.map((item) => (
           <SmallTimeLineCard
+            key={item.id}
             item={item}
             cardSelected={cardSelected}
             setCardSelected={setCardSelected}

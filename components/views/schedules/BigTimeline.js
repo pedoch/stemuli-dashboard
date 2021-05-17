@@ -125,7 +125,9 @@ function GraphYAxis({ time }) {
   return (
     <div className="col-span-2 grid grid-rows-5">
       {time.map((t) => (
-        <p className="my-4 text-center row-span-1">{t}</p>
+        <p className="my-4 text-center row-span-1" key={t}>
+          {t}
+        </p>
       ))}
     </div>
   );
