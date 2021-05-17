@@ -97,7 +97,7 @@ export default function Navbar() {
                     {link.number}
                   </span>
                   <span
-                    className={`bg-notification p-1 right-3 top-3 absolute rounded-full text-white tablet:${
+                    className={`bg-notification p-1 right-3 top-3 absolute rounded-full hidden text-white tablet:${
                       !showMenu ? "block" : "hidden"
                     }`}
                   ></span>

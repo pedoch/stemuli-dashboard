@@ -127,7 +127,7 @@ export default function Sidebar() {
                   {link.number}
                 </span>
                 <span
-                  className={`bg-notification p-1 right-3 top-3 absolute rounded-full text-white tablet:${
+                  className={`bg-notification p-1 right-3 top-3 absolute rounded-full text-white hidden tablet:${
                     !showMenu ? "block" : "hidden"
                   }`}
                 ></span>
